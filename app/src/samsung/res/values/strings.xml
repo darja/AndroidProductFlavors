@@ -1,3 +1,4 @@
 <resources>
     <string name="sku">samsung.test</string>
+    <string name="inapp_type">Samsung</string>
 </resources>

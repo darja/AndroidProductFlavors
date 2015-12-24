@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BuildTypesDemo</string>
-    <string name="action_settings">Settings</string>
 
+    <string name="app_flavor_title_format">This is &lt;b&gt;%1$s&lt;/b&gt; version with &lt;b&gt;%2$s&lt;/b&gt; billing</string>
     <string name="btn_purchase">Purchase</string>
+
 </resources>

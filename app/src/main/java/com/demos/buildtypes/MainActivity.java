@@ -3,7 +3,9 @@ package com.demos.buildtypes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.demos.buildtypes.purchase.IabListener;
 import com.demos.buildtypes.purchase.PurchaseFlow;
@@ -17,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView flavorTitleView = (TextView) findViewById(R.id.flavor_title);
+        flavorTitleView.setText(Html.fromHtml(getString(R.string.app_flavor_title_format,
+            getString(R.string.version_type), getString(R.string.inapp_type))));
     }
 
     @Override

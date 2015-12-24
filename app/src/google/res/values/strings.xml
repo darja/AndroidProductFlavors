@@ -1,3 +1,4 @@
 <resources>
     <string name="sku">android.test.purchased</string>
+    <string name="inapp_type">Google</string>
 </resources>

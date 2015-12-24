@@ -17,25 +17,30 @@ android {
         }
     }
 
+    flavorDimensions "version", "inapp"
+
     productFlavors {
         premium {
+            dimension "version"
             applicationId "com.demos.buildtypes.premium"
         }
 
         free {
+            dimension "version"
             applicationId "com.demos.buildtypes"
         }
 
         google {
+            dimension "inapp"
             manifestPlaceholders = [ extraPermissions:"<uses-permission android:name=\"com.android.vending.BILLING\" />" ]
         }
 
         samsung {
-
+            dimension "inapp"
         }
 
         amazon {
-
+            dimension "inapp"
         }
     }
 }
