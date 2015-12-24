@@ -32,15 +32,17 @@ android {
 
         google {
             dimension "inapp"
-            manifestPlaceholders = [ extraPermissions:"<uses-permission android:name=\"com.android.vending.BILLING\" />" ]
+            manifestPlaceholders = [ appLabel: "Google Demo"]
         }
 
         samsung {
             dimension "inapp"
+            manifestPlaceholders = [ appLabel: "Samsung Demo"]
         }
 
         amazon {
             dimension "inapp"
+            manifestPlaceholders = [ appLabel: "Amazon Demo"]
         }
     }
 }
