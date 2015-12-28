@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mPurchaseFlow = PurchaseFlowFactory.createPurchaseFlow(this, mIabListener);
+        mPurchaseFlow.onActivityCreate(this);
+
         TextView flavorTitleView = (TextView) findViewById(R.id.flavor_title);
         flavorTitleView.setText(Html.fromHtml(getString(R.string.app_flavor_title_format,
             getString(R.string.version_type), getString(R.string.inapp_type))));
@@ -35,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startPurchaseFlow(View view) {
-        mPurchaseFlow = PurchaseFlowFactory.createPurchaseFlow(this, mIabListener);
         mPurchaseFlow.purchase(getString(R.string.sku));
     }
 
@@ -54,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onPurchaseFailed() {
-
+            DPLog.e("Purchase failed");
+            Toast.makeText(MainActivity.this, "Purchase failed", Toast.LENGTH_SHORT).show();
         }
     };
 }

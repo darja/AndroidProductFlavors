@@ -1,0 +1,8 @@
+{
+  "com.demos.buildtypes.amazon" : {
+    "itemType": "CONSUMABLE",
+    "price": 10.00,
+    "title": "Amazon Item",
+    "description": "Very useful product from Amazon"
+  }
+}

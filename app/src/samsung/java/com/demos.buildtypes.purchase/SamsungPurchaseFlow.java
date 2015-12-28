@@ -1,7 +1,6 @@
 package com.demos.buildtypes.purchase;
 
 import android.app.Activity;
-import android.content.Intent;
 import com.demos.buildtypes.util.DPLog;
 import com.samsung.android.sdk.iap.lib.helper.SamsungIapHelper;
 import com.samsung.android.sdk.iap.lib.listener.OnPaymentListener;
@@ -17,11 +16,6 @@ public class SamsungPurchaseFlow extends PurchaseFlow {
     public void purchase(String sku) {
         SamsungIapHelper iapHelper = SamsungIapHelper.getInstance(mActivity, SamsungIapHelper.IAP_MODE_TEST_SUCCESS);
         iapHelper.startPayment(sku, true, mOnPaymentListener);
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-
     }
 
     private OnPaymentListener mOnPaymentListener = new OnPaymentListener()
