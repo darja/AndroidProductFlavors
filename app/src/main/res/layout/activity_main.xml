@@ -11,10 +11,17 @@
               android:textSize="16sp"
               android:text="@string/app_flavor_title_format"
         />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/package_name"
+              android:textSize="16sp"
+              android:text="@string/package_name_format"
+              android:layout_marginTop="10dp"
+        />
 
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="@string/btn_purchase"
             android:onClick="startPurchaseFlow"
+            android:layout_marginTop="10dp"
         />
 
 </LinearLayout>

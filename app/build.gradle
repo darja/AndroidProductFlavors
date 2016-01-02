@@ -1,15 +1,23 @@
 apply plugin: 'com.android.application'
 
+def baseAppId = "com.demos.buildtypes"
+def appVersionName = "1.0"
+def appVersionCode = 1
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
+
+    project.archivesBaseName = "BuildTypes-${appVersionName}-${appVersionCode}"
+
     defaultConfig {
-        applicationId "com.demos.buildtypes"
+        applicationId baseAppId
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode appVersionCode
+        versionName appVersionName
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -17,33 +25,42 @@ android {
         }
     }
 
-    flavorDimensions "version", "inapp"
+    flavorDimensions "inapp", "version"
 
     productFlavors {
         premium {
             dimension "version"
-            applicationId "com.demos.buildtypes.premium"
+            manifestPlaceholders = [ appLabel: "BuildTypes Premium"]
         }
 
         free {
             dimension "version"
-            applicationId "com.demos.buildtypes"
+            manifestPlaceholders = [ appLabel: "BuildTypes Free"]
         }
 
         google {
             dimension "inapp"
-            manifestPlaceholders = [ appLabel: "Google Demo"]
         }
 
         samsung {
             dimension "inapp"
-            manifestPlaceholders = [ appLabel: "Samsung Demo"]
         }
 
         amazon {
             dimension "inapp"
-            manifestPlaceholders = [ appLabel: "Amazon Demo"]
         }
+    }
+
+    applicationVariants.all { variant ->
+        def mergedFlavor = variant.mergedFlavor
+        def flavors = variant.productFlavors
+        def appId = baseAppId
+        for (int i = 0; i < flavors.size(); i++) {
+            appId += "."
+            appId += flavors[i].name
+        }
+        println "flavor: ${variant.flavorName} app id: ${appId}"
+        mergedFlavor.setApplicationId(appId);
     }
 }
 

@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         TextView flavorTitleView = (TextView) findViewById(R.id.flavor_title);
         flavorTitleView.setText(Html.fromHtml(getString(R.string.app_flavor_title_format,
             getString(R.string.version_type), getString(R.string.inapp_type))));
+
+        TextView packageNameView = (TextView) findViewById(R.id.package_name);
+        packageNameView.setText(Html.fromHtml(getString(R.string.package_name_format, getPackageName())));
     }
 
     @Override
