@@ -30,12 +30,10 @@ android {
     productFlavors {
         premium {
             dimension "version"
-            manifestPlaceholders = [ appLabel: "BuildTypes Premium"]
         }
 
         free {
             dimension "version"
-            manifestPlaceholders = [ appLabel: "BuildTypes Free"]
         }
 
         google {
