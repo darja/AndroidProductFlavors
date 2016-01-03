@@ -10,3 +10,7 @@ App is assumed to be distributed in two versions (free, premium) on three stores
 * Own application id for each combination
 
 Also there is In-App billing implemented for all stores, but this is just a quick-and-dirty implementation, not a comprehensive example.
+
+##Related articles (Russian):
+* [Основные понятия и структура проекта](http://megadarja.blogspot.ru/2016/01/gradle-product-flavors.html)
+* [Подключение библиотек, организация кода, сочетания вариантов](http://megadarja.blogspot.ru/2016/01/gradle-product-flavors_3.html)
