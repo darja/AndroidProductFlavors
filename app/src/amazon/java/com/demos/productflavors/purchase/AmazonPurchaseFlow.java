@@ -1,4 +1,4 @@
-package com.demos.buildtypes.purchase;
+package com.demos.productflavors.purchase;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,7 +8,7 @@ import com.amazon.device.iap.model.ProductDataResponse;
 import com.amazon.device.iap.model.PurchaseResponse;
 import com.amazon.device.iap.model.PurchaseUpdatesResponse;
 import com.amazon.device.iap.model.UserDataResponse;
-import com.demos.buildtypes.util.DPLog;
+import com.demos.productflavors.util.DPLog;
 
 public class AmazonPurchaseFlow extends PurchaseFlow implements PurchasingListener {
     public AmazonPurchaseFlow(Activity activity, IabListener iabListener) {

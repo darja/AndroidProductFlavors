@@ -1,4 +1,4 @@
-package com.demos.buildtypes;
+package com.demos.productflavors;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,10 +7,10 @@ import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.demos.buildtypes.purchase.IabListener;
-import com.demos.buildtypes.purchase.PurchaseFlow;
-import com.demos.buildtypes.purchase.PurchaseFlowFactory;
-import com.demos.buildtypes.util.DPLog;
+import com.demos.productflavors.purchase.IabListener;
+import com.demos.productflavors.purchase.PurchaseFlow;
+import com.demos.productflavors.purchase.PurchaseFlowFactory;
+import com.demos.productflavors.util.DPLog;
 
 public class MainActivity extends AppCompatActivity {
     private PurchaseFlow mPurchaseFlow;

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BuildTypesDemo</string>
+    <string name="app_name">ProductFlavors Demo</string>
 
     <string name="app_flavor_title_format">This is &lt;b&gt;%1$s&lt;/b&gt; version with &lt;b&gt;%2$s&lt;/b&gt; billing</string>
     <string name="package_name_format">Package name: &lt;b&gt;%1$s&lt;/b&gt;</string>

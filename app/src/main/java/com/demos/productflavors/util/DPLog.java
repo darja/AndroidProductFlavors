@@ -1,10 +1,10 @@
-package com.demos.buildtypes.util;
+package com.demos.productflavors.util;
 
 import java.util.HashSet;
 
 @SuppressWarnings("all")
 public class DPLog {
-    private static String tag = "BuildTypesDemo";
+    private static String tag = "ProductFlavors";
     private static String checkpointTag;
     private static boolean enabled = true;
     private static boolean locationEnabled = true;

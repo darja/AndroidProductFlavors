@@ -1,4 +1,4 @@
-package com.demos.buildtypes.purchase;
+package com.demos.productflavors.purchase;
 
 import android.app.Activity;
 import android.content.Context;

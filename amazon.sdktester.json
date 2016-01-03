@@ -1,5 +1,5 @@
 {
-  "com.demos.buildtypes.amazon" : {
+  "com.demos.productflavors.amazon" : {
     "itemType": "CONSUMABLE",
     "price": 10.00,
     "title": "Amazon Item",

@@ -1,4 +1,4 @@
-# BuildTypesDemo
+# AndroidProductFlavors
 
 Demonstration of configuring product flavors in Android app.
 

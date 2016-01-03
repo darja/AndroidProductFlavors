@@ -1,4 +1,4 @@
 <resources>
-    <string name="sku">com.demos.buildtypes.amazon</string>
+    <string name="sku">com.demos.productflavors.amazon</string>
     <string name="inapp_type">Amazon</string>
 </resources>

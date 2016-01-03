@@ -1,7 +1,7 @@
-package com.demos.buildtypes.purchase;
+package com.demos.productflavors.purchase;
 
 import android.app.Activity;
-import com.demos.buildtypes.util.DPLog;
+import com.demos.productflavors.util.DPLog;
 import com.samsung.android.sdk.iap.lib.helper.SamsungIapHelper;
 import com.samsung.android.sdk.iap.lib.listener.OnPaymentListener;
 import com.samsung.android.sdk.iap.lib.vo.ErrorVo;

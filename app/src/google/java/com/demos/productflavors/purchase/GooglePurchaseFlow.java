@@ -1,4 +1,4 @@
-package com.demos.buildtypes.purchase;
+package com.demos.productflavors.purchase;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
 import com.android.vending.billing.IInAppBillingService;
-import com.demos.buildtypes.util.DPLog;
+import com.demos.productflavors.util.DPLog;
 
 import java.util.UUID;
 
